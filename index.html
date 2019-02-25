@@ -1,61 +1,108 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-    <title>Welcome!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="robots" content="noindex" />
-	<style type="text/css"><!--
+  <title>Welcome!</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
     body {
-        color: #444444;
-        background-color: #EEEEEE;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 80%;
+      color: #444444;
+      background-color: #EEEEEE;
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 80%;
     }
-    h1 {}
-    h2 { font-size: 1.2em; }
-    #page{
-        background-color: #FFFFFF;
-        width: 60%;
-        margin: 24px auto;
-        padding: 12px;
+
+    h2 {
+      font-size: 1.2em;
     }
-    #header{
-        padding: 6px ;
-        text-align: center;
+
+    h3 {
+      font-size: 2em;
     }
-    .header{ background-color: #83A342; color: #FFFFFF; }
+
+    #page2 {
+      background-color: #ABEBC6;
+      width: 50%;
+      margin: 100px auto;
+      padding: 12px;
+      position: sticky;
+    }
+
+    #header {
+      padding: 6px;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #E74C3C;
+      color: #FFFFFF;
+    }
+
     #content {
-        padding: 4px 0 24px 0;
+      padding: 4px 0 24px 0;
+      text-align: center;
     }
+
     #footer {
-        color: #666666;
-        background: #f9f9f9;
-        padding: 10px 20px;
-        border-top: 5px #efefef solid;
-        font-size: 0.8em;
-        text-align: center;
+      color: #666666;
+      background: #f9f9f9;
+      padding: 10px 20px;
+      border-top: 5px #efefef solid;
+      font-size: 0.8em;
+      text-align: center;
     }
+
     #footer a {
-        color: #999999;
+      color: #999999;
     }
-    --></style>
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="page">
-        <div id="header" class="header">
-            <h1>Welcome to <!--ADRESSE//-->your website!<!--ADRESSE//--></h1>
-        </div>
-        <div id="content">
-            <h2>This is the default index page of your website.</h2>
-	    <h2>So, to test this feature I am adding this Line.</h2>
-            <p>This file may be deleted or overwritten without any difficulty. This is produced by the file <b>index.html</b> in the <b>web</b> directory.</p>
-            <p>For questions or problems please contact <!--SUPPORT//-->support<!--SUPPORT//-->.</p>
-        </div>
-        <div id="footer">
-            <p>Powered by <a href="http://www.ispconfig.org">ISPConfig</a></p>
-        </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="mat.mp4" type="video/mp4">
+  </video>
+  <div id="page2">
+    <div id="header" class="header">
+      <h1>Welcome to
+        <!--ADRESSE//-->My Test Site
+        <!--ADRESSE//-->
+      </h1>
     </div>
-</body>
+    <div id="content">
+      <!--      <h2>This is the default index page of your website.</h2> //-->
+      <h3>So, to test this feature I am adding this Line.</h3>
+      <p>This link navigates to my <a href="cv/Dip_Chowdhury_Resume_CV.html"><h3>CV</h3></a></p>
+      <!--  <p>This file may be deleted or overwritten without any difficulty. This is produced by the file <b>index.html</b> in the <b>web</b> directory.</p> //-->
+      <p>For questions or problems please contact
+        <!--SUPPORT//--> <a href="dipbd1@gmail.com"> dipbd1@gmail.com</a>
+        <!--SUPPORT//-->.</p>
+    </div>
+    <!--    <div id="footer">
+      <p>Powered by <a href="http://www.ispconfig.org">ISPConfig</a></p>
+    </div> //-->
+  </div>
+  </div>
+
 </html>
